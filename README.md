@@ -2,6 +2,8 @@
 
 A Flutter mobile application showcasing Jhon Norban Rulona's personal and professional profile as an IT student and photographer.
 
+🌐 **Live Demo**: [https://rulonajhon.github.io/portfolio_flutter/](https://rulonajhon.github.io/portfolio_flutter/)
+
 ## 🌟 Features
 
 ### 📱 Multi-Page Navigation
@@ -127,7 +129,40 @@ The app now features a **continuous scrolling experience**:
 - **Natural Scrolling**: Users can scroll manually or use the hamburger menu
 - **Smooth Animations**: 800ms animated transitions between sections
 
-## 🔮 Future Enhancements
+## � Deployment
+
+### GitHub Pages (Automated)
+This app is automatically deployed to GitHub Pages using GitHub Actions:
+
+1. **Live URL**: [https://rulonajhon.github.io/portfolio_flutter/](https://rulonajhon.github.io/portfolio_flutter/)
+2. **Auto-deployment**: Every push to `main` branch triggers automatic build and deployment
+3. **GitHub Actions**: Uses Flutter web build with optimized assets
+
+### Manual Deployment
+You can also deploy manually using the provided scripts:
+
+**Windows:**
+```bash
+deploy.bat
+```
+
+**Linux/Mac:**
+```bash
+./deploy.sh
+```
+
+### Local Development
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+### Build for Web
+```bash
+flutter build web --base-href "/portfolio_flutter/"
+```
+
+## �🔮 Future Enhancements
 
 - Integration with real social media profiles
 - Dynamic project loading from external sources
