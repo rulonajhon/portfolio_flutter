@@ -9,7 +9,7 @@ flutter pub get
 
 REM Build for web with correct base href
 echo 🏗️  Building Flutter web app...
-flutter build web --base-href "/portfolio_flutter/"
+flutter build web --base-href "/portfolio_flutter/" --dart-define=FLUTTER_WEB_USE_SKIA=false
 
 REM Check if build was successful
 if exist "build\web" (
